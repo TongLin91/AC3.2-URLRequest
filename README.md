@@ -13,6 +13,7 @@ Example on how to make GET and POST requests with URLRequest
 4. [Completion Handlers in Swift - grokswift](https://grokswift.com/completion-handlers-in-swift/)
   - Very nice explanation of completion handlers if you need a refresher/more detail
   - Also, the example uses JSONPlaceholder as well, so good place to get used to it
+5. [Building URLs with URLComponent and URLQueryItems](https://grokswift.com/building-urls/)
 
 ### References: 
 1. [URLRequest - Apple Doc](https://developer.apple.com/reference/foundation/urlrequest)
