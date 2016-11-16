@@ -27,6 +27,20 @@ Example on how to make GET and POST requests with URLRequest
   - Shows you how to set up a fake endpoint in Ruby as well
 
 ---
+### Lesson Objectives
+
+1. Briefly review `URLSession` and making a simple request
+2. Introduce `URLRequest` making a simple `GET` request to a familiar API (randomUser)
+3. Make another `GET URLRequest` with a new API (jsonPlaceholder)
+4. Make our first `POST` request on jsonPlaceholder
+  - Encounter serialization with the `.httpBody` property
+    
+---
+### Lesson Notes:
+
+**SEE PLAYGROUND FOR INFO**
+
+---
 ### Exercises:
 
 All of these are optional, and are provided for you to get a better understanding for today's lesson. I highly encourage completing #1, at least one example for #2 (one "example" meaning four functions for a single endpoint), at least one example for #3 and all of #4. 
