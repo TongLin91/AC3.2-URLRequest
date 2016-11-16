@@ -3,8 +3,6 @@
 import UIKit
 import XCPlayground
 
-var str = "Hello, playground"
-
 /*
  What is the CustomStringConvertible protocol? Glad you asked
  
@@ -62,10 +60,10 @@ func getAllPosts() {
         var returnedPosts = [PlaceholderPost]()
         for postJson in parsedJson {
           guard
-          let body = postJson["body"] as? String,
-          let title = postJson["title"] as? String,
-          let id = postJson["id"] as? Int,
-          let userID = postJson["userId"] as? Int else {
+            let body = postJson["body"] as? String,
+            let title = postJson["title"] as? String,
+            let id = postJson["id"] as? Int,
+            let userID = postJson["userId"] as? Int else {
               print("Error parsing post keys")
               return
           }
@@ -74,14 +72,14 @@ func getAllPosts() {
           returnedPosts.append(newPost)
         }
         
-//        print(returnedPosts)
+        //        print(returnedPosts)
       }
       catch {
         print("error occured parsing: \(error)")
       }
     }
-  }.resume()
-
+    }.resume()
+  
 }
 
 // POST Request
@@ -126,8 +124,8 @@ func postNewPost() {
         }
         
         guard let title = parsedJsonData["title"] as? String,
-        let body = parsedJsonData["body"] as? String,
-        let id = parsedJsonData["id"] as? Int,
+          let body = parsedJsonData["body"] as? String,
+          let id = parsedJsonData["id"] as? Int,
           let userId = parsedJsonData["userId"] as? Int else {
             print("Error parsing post")
             return
@@ -141,12 +139,26 @@ func postNewPost() {
       }
     }
     }.resume()
-
+  
 }
+
+//let urlComponents = URLComponents(string: "http://jsonplaceholder.typicode.com/posts/")
+//print(urlComponents)
+
+//print(urlComponents?.host)
+//print(urlComponents?.password)
+//print(urlComponents?.path)
+//print(urlComponents?.port)
+//print(urlComponents?.scheme)
+//print(urlComponents?.url)
+//print(urlComponents?.string)
+//print(urlComponents?.user)
+
+
 
 // uncomment as needed (will cause some performance issues)
 //getAllPosts()
-//postNewPost()
+postNewPost()
 
 // uncommon the below to allow this playground to work properly
-//XCPlaygroundPage.currentPage.needsIndefiniteExecution = true
+XCPlaygroundPage.currentPage.needsIndefiniteExecution = true
