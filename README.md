@@ -25,3 +25,15 @@ Example on how to make GET and POST requests with URLRequest
 ### Advanced:
 1. [Making a POST Request in Swift - Jameson Quave](http://jamesonquave.com/blog/making-a-post-request-in-swift/)
   - Shows you how to set up a fake endpoint in Ruby as well
+
+---
+### Exercises:
+
+All of these are optional, and are provided for you to get a better understanding for today's lesson. I highly encourage completing #1, at least one example for #2 (one "example" meaning four functions for a single endpoint), at least one example for #3 and all of #4. 
+
+1. Complete the two addition, currently empty, functions in the playground to demonstrate making a `PATCH/PUT` and `DELETE` request on the `/posts` endpoint
+2. Create 4 functions (one each for `GET, POST, PUT/PATCH, DELETE`) for any number of additional endpoints (`/users, /albums, /todos, etc`) until you feel confident in using `URLRequest` and serializing `Dictionary`s for the `httpBody` property of your request. 
+3. Instead of doing 4 functions per endpoint, refactor your code into just a single function. 
+  - To handle the different possibilities of data, make use of default parameter values and optional parameter values
+4. Implement the `JSONable` protocol on the `PlaceholderPost` model
+  - If you did exercise #2, make sure the models you create for the endpoints you use also conform to `JSONable` AND `CustomStringConvertable`
