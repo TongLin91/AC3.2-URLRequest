@@ -146,7 +146,7 @@ func postNewPost() {
 
 // uncomment as needed (will cause some performance issues)
 //getAllPosts()
-//postNewPost()
+postNewPost()
 
 // uncommon the below to allow this playground to work properly
 //XCPlaygroundPage.currentPage.needsIndefiniteExecution = true
